@@ -1,0 +1,7 @@
+---
+# Installs software and configures a workstation.
+
+- name: Setup workstation
+  hosts: workstation
+  roles:
+    - { role: prepare }

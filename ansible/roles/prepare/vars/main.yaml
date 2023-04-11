@@ -1,0 +1,7 @@
+# Folders used by Ansible on each host.
+directories:
+  - "C:/mgmt/bin/"
+  - "C:/mgmt/certs/"
+  - "C:/mgmt/preqs/"
+  - "C:/mgmt/templates/"
+  - "C:/mgmt/logs/"
