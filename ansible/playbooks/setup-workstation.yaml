@@ -9,3 +9,9 @@
   roles:
     - prepare
     - install_pwsh
+    # TODO: Browser configuration (default browser)
+    # TODO: winget
+    # TODO: WSL
+    # TODO: Xbox
+    # TODO: Battle net
+    # TODO: Terminal
