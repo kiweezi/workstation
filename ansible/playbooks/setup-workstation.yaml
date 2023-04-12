@@ -4,4 +4,5 @@
 - name: Setup workstation
   hosts: workstation
   roles:
-    - { role: prepare }
+    - prepare
+    - install_pwsh
