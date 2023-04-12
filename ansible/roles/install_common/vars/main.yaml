@@ -1,0 +1,58 @@
+# A list of chocolatey packages to install.
+package_list:
+  # Games.
+  - "steam"
+  - "ea-app"
+  - "multimc"
+  # Media.
+  - "vlc"
+  - "spotify"
+  # Imaging.
+  - "imageglass"
+  - "gimp"
+  - "lightshot.install"
+  # Communications.
+  - "discord"
+  # Productivity.
+  - "onedrive"
+  - "powertoys"
+  # Development.
+  - "vscode"
+  - "notepadplusplus"
+  - "terraform"
+  - "python"
+  - "git"
+  - "gh"
+  - "azure-cli"
+  - "docker-desktop"
+  - "openssl"
+  - "winscp"
+  - "tailscale"
+  # Notes.
+  - "obsidian"
+  # File sharing.
+  - "qbittorrent"
+  # Maintenance.
+  # Nvidia graphics driver.
+  - "nvidia-display-driver"
+  # Compression.
+  - "7zip"
+  # Runtimes.
+  # Java runtime.
+  - "temurinjre"
+  # Sideloading stuff.
+  - "altserver"
+  - "itunes"
+  - "icloud"
+# TODO: Software that need additional configuration.
+# - "firefox"
+# - "imageglass"
+# - "onedrive"
+
+# TODO: Software that could use additional configuration.
+# - "steam"
+# - "tailscale"
+# - "obsidian"
+# - "git"
+# - "gh"
+# - "discord"

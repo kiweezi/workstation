@@ -1,0 +1,6 @@
+---
+- name: Install latest
+  chocolatey.chocolatey.win_chocolatey:
+    name: "{{ item }}"
+    state: latest
+  loop: "{{ package_list }}"
