@@ -5,3 +5,6 @@ collections:
 
   - name: community.windows
     source: https://galaxy.ansible.com
+
+  - name: chocolatey.chocolatey
+    source: https://galaxy.ansible.com
