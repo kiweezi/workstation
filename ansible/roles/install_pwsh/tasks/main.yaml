@@ -1,0 +1,5 @@
+---
+- name: Install latest
+  win_chocolatey:
+    name: "{{ package_name }}"
+    state: latest
