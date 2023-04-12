@@ -9,7 +9,7 @@ galaxy_info:
   min_ansible_version: "2.14"
   license: "MIT"
   platforms:
-    - name: Ubuntu
+    - name: Windows
       versions:
         - all
   galaxy_tags:
