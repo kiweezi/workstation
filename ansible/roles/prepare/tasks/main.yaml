@@ -1,5 +1,4 @@
 ---
-
 - name: Create directory structures
   ansible.windows.win_file:
     path: "{{ item }}"
