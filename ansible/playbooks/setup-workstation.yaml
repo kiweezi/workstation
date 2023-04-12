@@ -3,6 +3,9 @@
 
 - name: Setup workstation
   hosts: workstation
+  vars:
+    # Workstations are on Windows.
+    ansible_shell_type: powershell
   roles:
     - prepare
     - install_pwsh
