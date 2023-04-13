@@ -14,10 +14,8 @@ package_list:
   # Communications.
   - "discord"
   # Productivity.
-  - "onedrive"
   - "powertoys"
   # Development.
-  - "vscode"
   - "notepadplusplus"
   - "terraform"
   - "python"
@@ -44,9 +42,6 @@ package_list:
   - "altserver"
   - "itunes"
   - "icloud"
-# TODO: Software that need additional configuration.
-# - "onedrive"
-
 # TODO: Software that could use additional configuration.
 # - "steam"
 # - "tailscale"
