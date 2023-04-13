@@ -13,6 +13,7 @@
     - install_browser
     - install_imageglass
     - install_vlc
+    - install_office
     # TODO: Office 365
     # TODO: winget
     # TODO: WSL
