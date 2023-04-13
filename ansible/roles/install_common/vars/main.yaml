@@ -10,7 +10,6 @@ package_list:
   - "vlc"
   - "spotify"
   # Imaging.
-  - "imageglass"
   - "gimp"
   - "lightshot.install"
   # Communications.
@@ -47,8 +46,6 @@ package_list:
   - "itunes"
   - "icloud"
 # TODO: Software that need additional configuration.
-# - "firefox"
-# - "imageglass"
 # - "onedrive"
 
 # TODO: Software that could use additional configuration.
