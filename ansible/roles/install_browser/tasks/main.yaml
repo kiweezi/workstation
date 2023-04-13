@@ -3,3 +3,9 @@
   chocolatey.chocolatey.win_chocolatey:
     name: "{{ package_name }}"
     state: latest
+
+- name: Set as default browser
+  ansible.builtin.include_role:
+    name: file_association
+  vars:
+    assocations: "{{ package_assocations }}"
