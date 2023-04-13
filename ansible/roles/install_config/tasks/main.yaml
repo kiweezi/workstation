@@ -9,7 +9,8 @@
   ansible.builtin.include_role:
     name: install_package
   vars:
-    assocations: "{{ target_vars.package_name }}"
+    packages:
+      - "{{ target_vars.package_name }}"
 
 - name: Set assocations
   ansible.builtin.include_role:
