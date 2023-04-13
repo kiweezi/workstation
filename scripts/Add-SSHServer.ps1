@@ -4,7 +4,6 @@
   .Description
     Installs OpenSSH Server and optionally installs a public SSH key on Windows.
   .NOTES
-    Version    : 1.0.0
     Author(s)  : kiweezi
   .Parameter PublicKey
     The SSH public key to allow access to the server via SSH key.
