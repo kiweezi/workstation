@@ -1,0 +1,12 @@
+---
+- name: Set file/protocol association
+  ansible.windows.win_powershell:
+    script: |
+      param (
+        [string]$ScriptUrl,
+        [array]$Assocations
+      )
+      ../files/Set-FTA.ps1 -Assocations $assocations -ScriptUrl $ScriptUrl
+    parameters:
+      scriptUrl: "{{ script_url }}"
+      assocations: "{{ assocations }}"

@@ -1,0 +1,10 @@
+# Download the script file. It doesn't have a PS Gallery listing.
+# Repo: https://github.com/DanysysTeam/PS-SFTA.
+script_url: "https://raw.githubusercontent.com/DanysysTeam/PS-SFTA/master/SFTA.ps1"
+
+# Default associations to make.
+assocations:
+  []
+  # - application: "FirefoxURL-308046B0AF4A39CB"
+  #   extension: "http"
+  #   type: "protocol"

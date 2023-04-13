@@ -1,0 +1,11 @@
+---
+- name: Install latest
+  chocolatey.chocolatey.win_chocolatey:
+    name: "{{ package_name }}"
+    state: latest
+
+- name: Set as default shell
+  ansible.windows.win_regedit:
+    path: HKLM:\SOFTWARE\OpenSSH
+    name: DefaultShell
+    data: 'C:\Program Files\PowerShell\7\pwsh.exe'

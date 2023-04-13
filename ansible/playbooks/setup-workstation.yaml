@@ -3,5 +3,20 @@
 
 - name: Setup workstation
   hosts: workstation
+  vars:
+    # Workstations are on Windows.
+    ansible_shell_type: powershell
   roles:
-    - { role: prepare }
+    - prepare
+    - install_pwsh
+    - install_common
+    - install_browser
+    - install_imageglass
+    - install_vlc
+    # TODO: Office 365
+    # TODO: winget
+    # TODO: WSL
+    # TODO: VSCode Dev Containers
+    # TODO: Terminal
+    # TODO: Power settings (wake up devices) and wake on lan
+    # TODO: Xbox

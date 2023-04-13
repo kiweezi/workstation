@@ -1,0 +1,16 @@
+---
+dependencies: []
+
+galaxy_info:
+  role_name: prepare
+  author: kiweezi
+  description: Performs basic setup on machine to be managed by Ansible
+  company: "Personal"
+  min_ansible_version: "2.14"
+  license: "MIT"
+  platforms:
+    - name: Windows
+      versions:
+        - all
+  galaxy_tags:
+    - desktop

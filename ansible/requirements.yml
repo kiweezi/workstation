@@ -1,7 +1,0 @@
----
-collections:
-  - name: ansible.windows
-    source: https://galaxy.ansible.com
-
-  - name: community.windows
-    source: https://galaxy.ansible.com
