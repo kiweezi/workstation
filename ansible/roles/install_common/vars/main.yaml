@@ -4,6 +4,8 @@ package_list:
   - "steam"
   - "ea-app"
   - "multimc"
+  # There is no Battle Net method currently:
+  # https://us.forums.blizzard.com/en/blizzard/t/desktop-app-silent-install/431
   # Media.
   - "vlc"
   - "spotify"

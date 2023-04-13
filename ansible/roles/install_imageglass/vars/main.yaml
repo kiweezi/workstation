@@ -1,0 +1,19 @@
+package_name: "imageglass"
+
+package_assocations:
+  # Application file extensions.
+  - application: "ImageGlass.AssocFile.GIF"
+    extension: ".gif"
+    type: "file"
+  - application: "ImageGlass.AssocFile.JPEG"
+    extension: ".jpeg"
+    type: "file"
+  - application: "ImageGlass.AssocFile.JPG"
+    extension: ".jpg"
+    type: "file"
+  - application: "ImageGlass.AssocFile.PNG"
+    extension: ".png"
+    type: "file"
+  - application: "ImageGlass.AssocFile.WEBP"
+    extension: ".webp"
+    type: "file"

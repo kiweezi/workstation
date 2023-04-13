@@ -10,11 +10,10 @@
     - prepare
     - install_pwsh
     - install_common
-    # TODO: Browser configuration (default browser)
+    - install_browser
     # TODO: Office 365
     # TODO: winget
     # TODO: WSL
-    # TODO: Xbox
-    # TODO: Battle net
     # TODO: Terminal
     # TODO: Power settings (wake up devices) and wake on lan
+    # TODO: Xbox
