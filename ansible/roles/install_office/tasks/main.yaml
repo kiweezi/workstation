@@ -1,0 +1,9 @@
+---
+# Installs Microsoft Office products sequentially, unfortunately.
+- name: Install latest office retail
+  chocolatey.chocolatey.win_chocolatey:
+    name: "{{ package_name }}"
+    state: present
+    choco_args:
+      - "/productid:{{ item }}"
+  loop: "{{ products }}"
