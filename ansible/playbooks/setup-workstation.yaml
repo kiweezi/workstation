@@ -9,6 +9,8 @@
   roles:
     - prepare
     - install_pwsh
+    # Activate Windows.
+    - activate_microsoft
     - install_common
     - install_browser
     - install_imageglass
