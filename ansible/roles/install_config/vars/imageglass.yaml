@@ -1,0 +1,22 @@
+package_name: "imageglass"
+
+application_name:
+  file: "ImageGlass.AssocFile"
+
+package_assocations:
+  # Application file extensions.
+  - application: "{{ application_name.file }}.GIF"
+    extension: ".gif"
+    type: "file"
+  - application: "{{ application_name.file }}.JPEG"
+    extension: ".jpeg"
+    type: "file"
+  - application: "{{ application_name.file }}.JPG"
+    extension: ".jpg"
+    type: "file"
+  - application: "{{ application_name.file }}.PNG"
+    extension: ".png"
+    type: "file"
+  - application: "{{ application_name.file }}.WEBP"
+    extension: ".webp"
+    type: "file"

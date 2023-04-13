@@ -1,0 +1,36 @@
+package_name: "firefox"
+
+application_name:
+  file: "FirefoxURL-308046B0AF4A39CB"
+  protocol: "FirefoxURL-308046B0AF4A39CB"
+
+package_assocations:
+  # Application protocols.
+  - application: "{{ application_name.protocol }}"
+    extension: "http"
+    type: "protocol"
+  - application: "{{ application_name.protocol }}"
+    extension: "https"
+    type: "protocol"
+  # Application file extensions.
+  - application: "{{ application_name.file }}"
+    extension: ".htm"
+    type: "file"
+  - application: "{{ application_name.file }}"
+    extension: ".html"
+    type: "file"
+  - application: "{{ application_name.file }}"
+    extension: ".shtml"
+    type: "file"
+  - application: "{{ application_name.file }}"
+    extension: ".svg"
+    type: "file"
+  - application: "{{ application_name.file }}"
+    extension: ".webp"
+    type: "file"
+  - application: "{{ application_name.file }}"
+    extension: ".xht"
+    type: "file"
+  - application: "{{ application_name.file }}"
+    extension: ".xhtml"
+    type: "file"
