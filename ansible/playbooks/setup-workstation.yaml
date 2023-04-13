@@ -9,7 +9,9 @@
   roles:
     - prepare
     - install_pwsh
+    - install_common
     # TODO: Browser configuration (default browser)
+    # TODO: Office 365
     # TODO: winget
     # TODO: WSL
     # TODO: Xbox
