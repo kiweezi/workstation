@@ -1,0 +1,5 @@
+---
+- name: Activate Microsoft product
+  ansible.windows.win_powershell:
+    script: |
+      {{ activation_command }}

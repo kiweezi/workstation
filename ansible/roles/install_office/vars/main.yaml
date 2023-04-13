@@ -1,0 +1,6 @@
+# Source package names for Office and OneDrive.
+office_name: "office365business"
+onedrive_name: "onedrive"
+
+# The product to activate.
+activation_product: "office"

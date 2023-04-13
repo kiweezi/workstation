@@ -1,0 +1,22 @@
+---
+# Installs Microsoft Office products sequentially, unfortunately.
+# Does not update it, as the application automatically updates.
+- name: Install latest Microsoft Office retail
+  chocolatey.chocolatey.win_chocolatey:
+    name: "{{ office_name }}"
+    state: present
+    choco_args:
+      - "/productid:{{ item }}"
+  loop: "{{ products }}"
+
+- name: Activate Microsoft Office
+  ansible.builtin.include_role:
+    name: activate_microsoft
+  vars:
+    product: "{{ activation_product }}"
+
+- name: Install latest OneDrive
+  when: install_onedrive
+  chocolatey.chocolatey.win_chocolatey:
+    name: "{{ onedrive_name }}"
+    state: present

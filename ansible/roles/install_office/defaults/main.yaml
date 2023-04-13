@@ -1,0 +1,10 @@
+# A list of product IDs to install.
+# https://learn.microsoft.com/en-us/microsoft-365/troubleshoot/installation/product-ids-supported-office-deployment-click-to-run#more-information.
+products:
+  # The latest version of products.
+  - "ExcelRetail"
+  - "PublisherRetail"
+  - "WordRetail"
+
+# Option to install OneDrive.
+install_onedrive: true

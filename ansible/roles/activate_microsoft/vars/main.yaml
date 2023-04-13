@@ -1,0 +1,9 @@
+# Script configuration for activating Office via KMS.
+# https://massgrave.dev/command_line_switches.html#Uses_In_Powershell_One_Liner.
+activation_url: "https://massgrave.dev/get"
+activation_script: "irm {{ activation_url }}"
+# Select activation method for specified product.
+activation_arguments:
+  windows: "/HWID"
+  office: "/KMS-Office /KMS-ActAndRenewalTask"
+activation_command: "& ([ScriptBlock]::Create(({{ activation_script }})) {{ activation_arguments[product] }}"
