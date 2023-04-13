@@ -11,6 +11,8 @@
     - install_pwsh
     - install_common
     - install_browser
+    - install_imageglass
+    - install_vlc
     # TODO: Office 365
     # TODO: winget
     # TODO: WSL

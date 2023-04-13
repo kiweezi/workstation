@@ -7,7 +7,6 @@ package_list:
   # There is no Battle Net method currently:
   # https://us.forums.blizzard.com/en/blizzard/t/desktop-app-silent-install/431
   # Media.
-  - "vlc"
   - "spotify"
   # Imaging.
   - "gimp"
