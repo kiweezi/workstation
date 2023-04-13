@@ -2,7 +2,7 @@
 # Use specified software vars.
 - name: Get software variables
   ansible.builtin.include_vars:
-    file: ../vars/{{ software }}.yml
+    file: ../vars/{{ package }}.yml
     name: target_vars
 
 - name: Install latest
