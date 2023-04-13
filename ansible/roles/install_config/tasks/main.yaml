@@ -1,0 +1,19 @@
+---
+# Use specified software vars.
+- name: Get software variables
+  ansible.builtin.include_vars:
+    file: ../vars/{{ package }}.yml
+    name: target_vars
+
+- name: Install latest
+  ansible.builtin.include_role:
+    name: install_package
+  vars:
+    packages:
+      - "{{ target_vars.package_name }}"
+
+- name: Set assocations
+  ansible.builtin.include_role:
+    name: file_association
+  vars:
+    assocations: "{{ target_vars.package_assocations }}"

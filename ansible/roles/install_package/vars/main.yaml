@@ -1,5 +1,5 @@
-# A list of chocolatey packages to install.
-package_list:
+# A list of chocolatey packages to install when packages are set to 'all'.
+all_list:
   # Games.
   - "steam"
   - "ea-app"
@@ -49,3 +49,6 @@ package_list:
 # - "git"
 # - "gh"
 # - "discord"
+
+# If 'all' is specified, install all packages listed above.
+package_list: "{{ all_list if packages[0] == 'all' else packages }}"

@@ -7,16 +7,17 @@
     # Workstations are on Windows.
     ansible_shell_type: powershell
   roles:
-    - prepare
-    - install_pwsh
+    - { role: prepare }
+    - { role: install_pwsh }
     # Activate Windows.
-    - activate_microsoft
-    - install_common
-    - install_browser
-    - install_imageglass
-    - install_vlc
-    - install_office
-    # TODO: Office 365
+    - { role: activate_microsoft, product: windows }
+    # Install common software without configuring.
+    - { role: install_package, packages: ['all'] }
+    - { role: install_config, package: firefox }
+    - { role: install_config, package: imageglass }
+    - { role: install_config, package: vlc }
+    - { role: install_config, package: vscode }
+    - { role: install_office }
     # TODO: winget
     # TODO: WSL
     # TODO: VSCode Dev Containers
