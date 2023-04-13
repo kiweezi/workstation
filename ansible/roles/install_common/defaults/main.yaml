@@ -1,4 +1,5 @@
-# A list of chocolatey packages to install.
+# A list of chocolatey packages to install by default.
+# If no list of packages are specified when calling the role, the below will be installed.
 package_list:
   # Games.
   - "steam"
