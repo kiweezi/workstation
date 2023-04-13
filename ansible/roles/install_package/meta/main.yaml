@@ -2,9 +2,9 @@
 dependencies: []
 
 galaxy_info:
-  role_name: install_common
+  role_name: install_package
   author: kiweezi
-  description: Installs common software without configuration
+  description: Installs software packages without configuration
   company: "Personal"
   min_ansible_version: "2.14"
   license: "MIT"
