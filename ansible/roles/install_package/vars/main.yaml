@@ -1,0 +1,54 @@
+# A list of chocolatey packages to install when packages are set to 'all'.
+all_list:
+  # Games.
+  - "steam"
+  - "ea-app"
+  - "multimc"
+  # There is no Battle Net method currently:
+  # https://us.forums.blizzard.com/en/blizzard/t/desktop-app-silent-install/431
+  # Media.
+  - "spotify"
+  # Imaging.
+  - "gimp"
+  - "lightshot.install"
+  # Communications.
+  - "discord"
+  # Productivity.
+  - "powertoys"
+  # Development.
+  - "notepadplusplus"
+  - "terraform"
+  - "python"
+  - "git"
+  - "gh"
+  - "azure-cli"
+  - "docker-desktop"
+  - "openssl"
+  - "winscp"
+  - "tailscale"
+  # Notes.
+  - "obsidian"
+  # File sharing.
+  - "qbittorrent"
+  # Maintenance.
+  # Nvidia graphics driver.
+  - "nvidia-display-driver"
+  # Compression.
+  - "7zip"
+  # Runtimes.
+  # Java runtime.
+  - "temurinjre"
+  # Sideloading stuff.
+  - "altserver"
+  - "itunes"
+  - "icloud"
+# TODO: Software that could use additional configuration.
+# - "steam"
+# - "tailscale"
+# - "obsidian"
+# - "git"
+# - "gh"
+# - "discord"
+
+# If 'all' is specified, install all packages listed above.
+package_list: "{{ all_list if packages[0] == 'all' else packages }}"
