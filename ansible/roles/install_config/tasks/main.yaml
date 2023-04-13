@@ -1,0 +1,17 @@
+---
+# Use specified software vars.
+- name: Get software variables
+  ansible.builtin.include_vars:
+    file: ../vars/{{ software }}.yml
+    name: target_vars
+
+- name: Install latest
+  chocolatey.chocolatey.win_chocolatey:
+    name: "{{ target_vars.package_name }}"
+    state: latest
+
+- name: Set assocations
+  ansible.builtin.include_role:
+    name: file_association
+  vars:
+    assocations: "{{ target_vars.package_assocations }}"
