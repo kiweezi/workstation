@@ -12,7 +12,7 @@
   .Example
     # Set Firefox as default http.
     PS> $assocations = @(@{type = "protocol"; application = "FirefoxURL"; extension = "http"})
-    PS> ./Apply-FTA.ps1 -Assocations $assocations
+    PS> ./Set-FTA.ps1 -Assocations $assocations
 #>
 
 

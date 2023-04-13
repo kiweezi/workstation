@@ -6,7 +6,7 @@
         [string]$ScriptUrl,
         [array]$Assocations
       )
-      ../files/Apply-FTA.ps1 -Assocations $assocations -ScriptUrl $ScriptUrl
+      ../files/Set-FTA.ps1 -Assocations $assocations -ScriptUrl $ScriptUrl
     parameters:
       scriptUrl: "{{ script_url }}"
       assocations: "{{ assocations }}"
