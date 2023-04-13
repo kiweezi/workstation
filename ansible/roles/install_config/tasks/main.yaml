@@ -6,9 +6,10 @@
     name: target_vars
 
 - name: Install latest
-  chocolatey.chocolatey.win_chocolatey:
-    name: "{{ target_vars.package_name }}"
-    state: latest
+  ansible.builtin.include_role:
+    name: install_common
+  vars:
+    assocations: "{{ target_vars.package_name }}"
 
 - name: Set assocations
   ansible.builtin.include_role:
