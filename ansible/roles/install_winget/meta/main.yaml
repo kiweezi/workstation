@@ -1,0 +1,16 @@
+---
+dependencies: []
+
+galaxy_info:
+  role_name: install_winget
+  author: kiweezi
+  description: Installs Windows package manager, winget
+  company: "Personal"
+  min_ansible_version: "2.14"
+  license: "MIT"
+  platforms:
+    - name: Windows
+      versions:
+        - all
+  galaxy_tags:
+    - desktop
