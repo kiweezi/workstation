@@ -17,8 +17,9 @@
     - { role: install_config, package: imageglass }
     - { role: install_config, package: vlc }
     - { role: install_config, package: vscode }
+    - { role: install_config, package: notepadplusplus }
     - { role: install_office }
-    # TODO: winget
+    - { role: install_winget }
     # TODO: WSL
     # TODO: VSCode Dev Containers
     # TODO: Terminal
