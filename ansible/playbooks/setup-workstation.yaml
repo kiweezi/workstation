@@ -24,4 +24,12 @@
     # TODO: VSCode Dev Containers
     # TODO: Terminal
     # TODO: Power settings (wake up devices) and wake on lan
-    # TODO: Xbox
+    # TODO: Auto logins
+    #   - Discord
+    #   - Steam
+    # TODO: Set media download paths for gaming programs etc
+    #   - Steam
+    #   - EA-app
+    #   - MultiMC
+    #   - BattleNet?
+    # TODO: Investigate firefox auto login / setup BitWarden
