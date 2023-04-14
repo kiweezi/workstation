@@ -1,0 +1,10 @@
+package_name: "notepadplusplus"
+
+application_name:
+  file: 'Applications\notepad++.exe'
+
+package_assocations:
+  # Application file extensions.
+  - application: "{{ application_name.file }}"
+    extension: ".txt"
+    type: "file"
