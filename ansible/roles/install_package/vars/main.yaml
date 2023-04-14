@@ -16,7 +16,6 @@ all_list:
   # Productivity.
   - "powertoys"
   # Development.
-  - "notepadplusplus"
   - "terraform"
   - "python"
   - "git"
@@ -43,6 +42,7 @@ all_list:
   - "itunes"
   - "icloud"
 # TODO: Software that could use additional configuration.
+# - "notepadplusplus"
 # - "steam"
 # - "tailscale"
 # - "obsidian"

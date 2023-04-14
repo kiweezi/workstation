@@ -12,9 +12,9 @@
       # get latest download url
       $URL = "{{ winget_url }}"
       $URL = (Invoke-WebRequest -Uri $URL).Content | ConvertFrom-Json |
-              Select-Object -ExpandProperty "assets" |
-              Where-Object "browser_download_url" -Match '.msixbundle' |
-              Select-Object -ExpandProperty "browser_download_url"
+        Select-Object -ExpandProperty "assets" |
+        Where-Object "browser_download_url" -Match '.msixbundle' |
+        Select-Object -ExpandProperty "browser_download_url"
       # download
       Invoke-WebRequest -Uri $URL -OutFile "Setup.msix" -UseBasicParsing
 
