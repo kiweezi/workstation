@@ -23,8 +23,8 @@ param (
 
 
 # Get credentials.
-$username = $env:username
-$password = $env:password
+$username = $env:WSL_USERNAME
+$password = $env:WSL_PASSWORD
 # Set defaults.
 $changed = $false
 $result = ""
@@ -37,13 +37,16 @@ function Install-WSL {
   # Install WSL feature.
   wsl --distribution $Distribution --install
 
-  # Create user account.
-  wsl --distribution $Distribution useradd -m "$username"
-  wsl --distribution $Distribution sh -c "echo "${username}:${password}" | chpasswd" # wrapped in sh -c to get the pipe to work
-  wsl --distribution $Distribution chsh -s /bin/bash "$username"
-  wsl --distribution $Distribution usermod -aG adm, cdrom, sudo, dip, plugdev "$username"
-  # Set as default.
-  wsl --distribution $Distribution --default-user "$username"
+  # If the username and password are specified.
+  if ($null -notin @($username, $password)) {
+    # Create user account.
+    wsl --distribution $Distribution useradd -m "$username"
+    wsl --distribution $Distribution sh -c "echo "${username}:${password}" | chpasswd" # wrapped in sh -c to get the pipe to work
+    wsl --distribution $Distribution chsh -s /bin/bash "$username"
+    wsl --distribution $Distribution usermod -aG adm, cdrom, sudo, dip, plugdev "$username"
+    # Set as default.
+    wsl --distribution $Distribution --default-user "$username"
+  }
 
   # Update packages.
   $env:DEBIAN_FRONTEND = "noninteractive"

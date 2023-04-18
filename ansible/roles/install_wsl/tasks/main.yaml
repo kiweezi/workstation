@@ -12,5 +12,5 @@
       Distribution: "{{ distribution }}"
   # Pass through the WSL username and password.
   environment:
-    username: "{{ lookup('ansible.builtin.env', 'wsl_username') }}"
-    password: "{{ lookup('ansible.builtin.env', 'wsl_password') }}"
+    WSL_USERNAME: "{{ lookup('ansible.builtin.env', 'WSL_USERNAME') }}"
+    WSL_PASSWORD: "{{ lookup('ansible.builtin.env', 'WSL_PASSWORD') }}"
