@@ -1,0 +1,16 @@
+---
+# Install Windows Subsystem for Linux with specified distribution.
+- name: Install WSL
+  ansible.windows.win_powershell:
+    script: |
+      param (
+        [string] $Distribution
+      )
+
+      ../files/Add-WSL.ps1 -Distribution $Distribution
+    arguments:
+      Distribution: "{{ distribution }}"
+  # Pass through the WSL username and password.
+  environment:
+    WSL_USERNAME: "{{ lookup('ansible.builtin.env', 'WSL_USERNAME') }}"
+    WSL_PASSWORD: "{{ lookup('ansible.builtin.env', 'WSL_PASSWORD') }}"
